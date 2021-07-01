@@ -1,0 +1,47 @@
+.homecard{
+    width: 100%;
+    height: 70vh;
+    background-color:#E8580C;
+    justify-content: center;
+    align-items: center;
+}
+.homecard__details{
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 25px;
+}
+.card__detailsfirst, .card__detailsSecond, .card__detailsThird, .card__detailsFour{
+    margin-top: 100px;
+    color: #fff;
+
+}
+.card__detailsfirstInfo , .card__detailsSecondInfo, .card__detailsThirdInfo , .card__detailsFourInfo{
+    border-radius: 50%;
+    padding: 10px;
+    border-color: #fff;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 3px solid #fff;
+    background-color:#E8580C;
+    text-align: center;
+    cursor: pointer;
+
+}
+.card__detailsfirst{
+    margin-left: 50px;
+}
+.homeIcon{
+    font-size: 80px !important;
+    justify-content: center;
+    padding: 10px !important;
+}
+.homecard__detailsh4{
+    margin: 10px;
+    color: #fff;
+}
+.homecard__detailsh4>h6{
+    color: #fff;
+}

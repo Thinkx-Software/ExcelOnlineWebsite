@@ -1,0 +1,44 @@
+.counter{
+    background-image: url('https://images.pexels.com/photos/4144096/pexels-photo-4144096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-color:#000;
+    height: 50vh;
+    width: 100%;
+    opacity: 1;
+    
+}
+
+  .counter__details{
+      display: grid;
+      place-items: center;
+      margin-top: 50px;
+  }
+  .counter__block{
+      margin-top:40px;
+
+  }
+  .counter__block>h1{
+      border-bottom: 1px solid #fff;
+  }
+  .counter__blocktext{
+      margin: 30px 10px 20px 0px;
+      color: #fff;
+      padding: 15px;
+  }
+  .counter__blocktext>p{
+      color: #fff;
+      font-weight: bolder;
+      font-size: 22px;
+
+  }
+  .counter__counting{
+      width: 80%;
+      margin-left: 40px;
+  }
+  .counting__up{
+      font-size: 50px !important;
+      padding: 20px;
+      color: #fff;
+  }

@@ -1,0 +1,47 @@
+.testimonial{
+
+}
+.testimonial__details{
+    display: grid;
+    place-items: center;
+}
+.testimonail__block{
+    border-bottom: 1px solid gray;
+}
+.testimonail__words{
+    width: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    font-weight: bold;
+    color: gray;
+}
+.testimonail__see{
+    width: 30%;
+}
+.testimonial__icon{
+    border-radius: 50%;
+    padding: 10px;
+    border-color: #fff;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 3px solid #fff;
+    background-color:gray;
+    text-align: center;
+    cursor: pointer;
+}
+.testimonial__iconStudent{
+    font-size: 80px !important;
+    justify-content: center;
+    padding: 10px !important;
+}
+.testimonail__name{
+    margin-top: 20px;
+    padding: 20px;
+}
+.testimonial__student{
+    
+}

@@ -1,0 +1,42 @@
+
+.banner{
+    /* position: relative; */
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    height: 80vh;
+    cursor: pointer;
+}
+.bannerHome__Image{
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    background-color: #111;
+}
+.banner__words{
+    position: absolute;
+    z-index: 20;
+    color:#fff;
+    background-color:rgba(94,92,97,0.3);
+    height: 20vh;
+    width: 40%;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 60px;
+    
+}
+.banner__wordsH3{
+    margin-bottom: 10px;
+    color: #fff;
+}
+.banner__button{
+    position: absolute;
+    z-index: 20;
+    color:#fff;
+    height: 20vh;
+    width: 40%;
+    align-items: center;
+    margin-top: 210px;
+    margin-left: 60px;
+
+}
