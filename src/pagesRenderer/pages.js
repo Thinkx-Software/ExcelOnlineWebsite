@@ -1,6 +1,9 @@
 
 import { useParams } from "react-router-dom";
 import NotFound from "../pages/general/NotFound";
+import AboutUs from "../pages/public/aboutus/AboutUs";
+import ContactUs from "../pages/public/contactus/ContactUs";
+import HowToPay from "../pages/public/howtopay/HowToPay";
 
 
 //create an array of all pages
@@ -11,6 +14,18 @@ const pages = [
     {
         url:"search",
         Component:Search
+    },
+    {
+        url:"aboutus",
+        Component:AboutUs
+    },
+    {
+        url:"howtopay",
+        Component:HowToPay
+    },
+    {
+        url:"contactus",
+        Component:ContactUs
     }
 
 ]

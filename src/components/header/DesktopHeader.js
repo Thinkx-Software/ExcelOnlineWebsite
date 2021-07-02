@@ -27,10 +27,10 @@ function DesktopHeader() {
                 </div>
                 <div className="desktopheader__detailsMiddle">
                     <Link>HOME</Link>
-                    <Link>ABOUT US</Link>
-                    <Link>HOW TO PAY </Link>
-                    <Link>SCHOOL BLOG</Link>
-                    <Link>CONTACT US</Link>
+                    <Link to="/excel/aboutus">ABOUT US</Link>
+                    <Link to="/excel/howtopay">HOW TO PAY </Link>
+                    <Link to="">SCHOOL BLOG</Link>
+                    <Link to="/excel/contactus">CONTACT US</Link>
                 </div>
                 <div className="desktopheader__detailsRight">
                     <Link>

@@ -1,0 +1,39 @@
+.aboutuscard{
+    display: grid;
+    place-items: center;
+}
+
+.aboutuscard__details{
+    width: 90%;
+}
+.aboutuscard__about,.aboutuscard__forum{
+    border:0.2px thin gray;
+    margin: 20px;
+    padding: 10px;
+}
+
+.about__header>h2{
+    color: #E8580C;
+}
+.aboutus__image>img{
+    width: 80%;
+    height: 40vh;
+}
+.about__content>p{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 3;
+}
+.forum__forum{
+    margin:10px 20px 10px 20px;
+}
+.forum__forum1>a{
+    color: #E8580C;
+    font-size: 22px;
+    font-weight: bolder;
+    align-items: center;
+    margin-top: -22px;
+}
+.forum__activities{
+    
+}
