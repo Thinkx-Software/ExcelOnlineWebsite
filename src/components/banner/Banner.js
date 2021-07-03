@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./Banner.css";
@@ -6,7 +6,7 @@ import { Button } from "@material-ui/core";
 import useCheckIsMobile from "../../Hooks/MobileHook/UseCheckIsMobile";
 
 const Banner = () => {
-    const [showBanner , setShowBanner] = useState(false)
+    const [showBanner, setShowBanner] = useState(false)
     //window listener
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -17,19 +17,19 @@ const Banner = () => {
                 setShowBanner(false)
             }
         })
-        return ()=> window.removeEventListener('scroll', ()=>{})
-        
+        return () => window.removeEventListener('scroll', () => { })
+
     }, [showBanner])
     //window listener
     //add and remove margin
     const [marginTop, setMarginTop] = useState(true)
 
     //check mobile view
-           //check mobile
-const isMobile = useCheckIsMobile()
-    
+    //check mobile
+    const isMobile = useCheckIsMobile()
+
     return (
-        <div className={`banner ${showBanner&&"removeBanner"} ${isMobile&&"removeMarginTop"} `}>
+        <div className={`banner ${showBanner && "removeBanner"} ${isMobile && "removeMarginTop"} `}>
             <div className="banner__carousel">
                 <Carousel
 
@@ -39,20 +39,23 @@ const isMobile = useCheckIsMobile()
                     showThumbs={false}
                     interval={2000}
                     autoPlay={true}
-                    
+
                 >
                     <div>
                         {/*put words */}
 
-                        <div className="banner__words">
+                        <div className={`banner__words ${isMobile && "banner__wordsMobile"}`} >
                             <div>
-                                <h1>For all Secondary Schools Exams</h1>
+                                <h3 style={{ color: "#fff", margin: 10 }}>For all Secondary Schools Exams</h3>
                             </div>
                         </div>
 
                         <div className="banner__button">
                             <div>
-                                <Button color="primary" variant="contained">Read More</Button>
+                                <Button style={{
+                                    color: "#E8580C",
+                                    backgroundColor: "#fff"
+                                }} variant="contained">Read More</Button>
                             </div>
                         </div>
                         {/*put words */}
@@ -66,15 +69,20 @@ const isMobile = useCheckIsMobile()
 
                         {/*put words */}
 
-                        <div className="banner__words">
+                        <div className={`banner__words ${isMobile && "banner__wordsMobile"}`}>
                             <div>
-                                <h1>HOME OF ACADEMIC SUCCESS</h1>
+                                <h3 style={{ color: "#fff", margin: 20 }}>Home OF Academic Success</h3>
                             </div>
                         </div>
 
                         <div className="banner__button">
                             <div>
-                                <Button color="primary" variant="contained">Read More</Button>
+                                <Button
+                                    style={{
+                                        color: "#E8580C",
+                                        backgroundColor: "#fff"
+                                    }}
+                                    variant="contained">Read More</Button>
                             </div>
                         </div>
                         {/*put words */}

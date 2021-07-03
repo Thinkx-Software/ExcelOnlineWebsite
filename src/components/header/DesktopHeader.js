@@ -52,7 +52,8 @@ function DesktopHeader({color}) {
                 <div className="desktopheader__detailsMiddle">
                     <Link to="/" 
                     style={{
-                        color:color?colorLink:null
+                        color:color?colorLink:null,
+                        marginBottom:"130px"
                     }}
                     >HOME</Link>
                     <Link to="/excel/aboutus"
