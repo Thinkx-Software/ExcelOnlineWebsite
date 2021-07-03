@@ -163,6 +163,43 @@ function ContactusForm() {
                       </FormControl>
                      
                       {/*confirm password */}
+                       {/*here us about */}
+                       <FormControl className="signup__email">
+                                            <Field
+                                                name="hereUsAbout"
+                                                type="text"
+                                                as={TextField}
+                                                variant={!errors.hereUsAbout && touched.hereUsAbout ? "filled" : "outlined"}
+                                                error={errors.hereUsAbout && touched.hereUsAbout}
+                                                label="Where did u here us about"
+                                                placeholder="enter hereUsAbout"
+                                                size="small"
+                                            />
+                                            {errors.hereUsAbout && touched.hereUsAbout &&
+                                                <ErrorMessage name="hereUsAbout" component="span" className="error" />}
+                                        </FormControl>
+                                        {/*here us about */}
+                                        {/*message */}
+                                        <FormControl className="signup__email">
+                                            <Field
+                                                name="message"
+                                                type="text"
+                                                as={TextareaAutosize}
+                                                error={errors.message && touched.message}
+                                                label="Where did u here us about"
+                                                placeholder="enter message"
+                                                rowsMax={4}
+                                                size="small"
+                                                aria-label="maximum height"
+                                                style={{
+                                                    height:"70px"
+                                                }}
+                                            />
+                                            {errors.message && touched.message &&
+                                                <ErrorMessage name="message" component="span" className="error" />}
+                                        </FormControl>
+                                        {/*message */}
+
 
                      
                       <FormControl className="signup__button">
