@@ -17,7 +17,7 @@ const [toggleMenu, setToggleMenu] = useState(true);
             <div>
             {
                     isMobile?<HeaderMobile  toggleMenu={toggleMenu}  setToggleMenu={setToggleMenu} />:
-                    <DesktopHeader/>
+                    <DesktopHeader color />
                 }
             </div>
             <div>

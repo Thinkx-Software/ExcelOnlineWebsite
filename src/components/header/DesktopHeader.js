@@ -3,24 +3,33 @@ import "./DesktopHeader.css";
 import MenuIcon from '@material-ui/icons/Menu';
 import {Link} from "react-router-dom";
 import "./DesktopHeader.css"
-function DesktopHeader() {
+function DesktopHeader({color}) {
     const [showBackGroundColor , setShowBackGroundColor] = useState(false)
     //window listener
+    //color
+    const [colorLink, setLinkColor] = useState("grey")
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.scrollY > 70) {
                 setShowBackGroundColor(true)
+                setLinkColor("#fff")
+
             }
             else {
                 setShowBackGroundColor(false)
+                setLinkColor("grey")
             }
         })
         return ()=> window.removeEventListener('scroll', ()=>{})
         
     }, [showBackGroundColor])
     //window listener
+    
+    //bg
     return (
-        <div className={`desktopheader  ${showBackGroundColor&&'desktop__black'}`}>
+        <div className={`desktopheader  ${showBackGroundColor&&'desktop__black'}`} style={{
+            backgroundColor:color?"#fff":null
+        }}>
             <div className="desktopheader__details">
                 <div className="desktopheader__detailsLeft">
                     <div className="detailsLeft__icon">
@@ -41,14 +50,33 @@ function DesktopHeader() {
                     </div>
                 </div>
                 <div className="desktopheader__detailsMiddle">
-                    <Link to="/">HOME</Link>
-                    <Link to="/excel/aboutus">ABOUT US</Link>
-                    <Link to="/excel/howtopay">HOW TO PAY </Link>
-                    <Link to="">SCHOOL BLOG</Link>
-                    <Link to="/excel/contactus">CONTACT US</Link>
+                    <Link to="/" 
+                    style={{
+                        color:color?colorLink:null
+                    }}
+                    >HOME</Link>
+                    <Link to="/excel/aboutus"
+                    style={{
+                        color:color?colorLink:null
+                    }}
+                    >ABOUT US</Link>
+                    <Link to="/excel/howtopay"
+                     style={{
+                        color:color?colorLink:null
+                    }}
+                    >HOW TO PAY </Link>
+                    <Link to="/excel/contactus"
+                    style={{
+                        color:color?colorLink:null
+                    }}
+                    >CONTACT US</Link>
                 </div>
                 <div className="desktopheader__detailsRight">
-                    <Link>
+                    <Link 
+                    style={{
+                        color:color?colorLink:null
+                    }}
+                    >
                        LOG IN
                     </Link>
                 </div>

@@ -13,7 +13,7 @@ function HowToPayCard() {
                         {/* box1*/}
                         <div className="aboutuscard__about">
                             <div className="about__header">
-                                <h2>About Us</h2>
+                                <h2>HOW TO PAY</h2>
                             </div>
                             {/*image */}
                             <div className="aboutus__image">

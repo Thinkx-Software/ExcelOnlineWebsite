@@ -15,8 +15,14 @@
     }
     .mobile__image{
       object-fit: contain;
-      margin-top: 25px;
+      margin-top: 0;
+      height:120px;
+      width: 150px;
+      margin-top: -20px;
     
+    }
+    .mobile__blueImage{
+      display: none;
     }
     .mobile__logo{
       display: flex;
@@ -57,8 +63,8 @@
       flex-direction: row;
       margin-right: 20px;
       margin-left: -20px;
-      width: 100%;
-      border-bottom: 1px solid gray;
+      width: 80%;
+      border-bottom: 1px solid #E8580C;
      
     }
     .mobile__icons>a{
@@ -121,11 +127,7 @@
       left:40%;
       font-size: small;
     }
-    .mobile__blueImage{
-        
-        display: none;
-      
-    }
+    
     .mobile__bumu{
       margin-right: 10px;
       margin-top: 3px;
