@@ -22,7 +22,7 @@ function HomeCard() {
                             </div>
                             <div className="home__para">
                                 <p className="home__paragraph">
-                                    Online Courses enable students learn anywhere and at any time
+                                    Online Courses enable students learn from anywhere and at any time
                                 </p>
                             </div>
                             
@@ -41,7 +41,7 @@ function HomeCard() {
                             </div>
                             <div>
                                 <p className="home__paragraph">
-                                    Online Courses enable students learn anywhere and at any time
+                                    Enrol for the topics of your choice and gain mastery knowlege of the topic enrolled for.
                                 </p>
                             </div>
                             
@@ -60,7 +60,7 @@ function HomeCard() {
                             </div>
                             <div>
                                 <p className="home__paragraph">
-                                    Online Courses enable students learn anywhere and at any time
+                                    Keep a regular study schedule and you will become an expert in your chosen subject
                                 </p>
                             </div>
                             
@@ -79,7 +79,7 @@ function HomeCard() {
                             </div>
                             <div>
                                 <p className="home__paragraph">
-                                    Online Courses enable students learn anywhere and at any time
+                                    Join our Teaching Network as a contributor of Knowledge and earn extra cash.
                                 </p>
                             </div>
                             

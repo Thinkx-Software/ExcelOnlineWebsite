@@ -10,7 +10,7 @@ function Footer() {
                      <Grid item sm={12} md={3}>
                          <div className="footer__first">
                              <h3>ABOUT US</h3>
-                             <p>Our courses</p>
+                             <p>Our courses are</p>
                              <p>
                                  prepared and delivered
                              </p>
@@ -31,7 +31,7 @@ function Footer() {
                                  view lessons from your
                              </p>
                              <p>
-                                 mobile phones tables and computers
+                                 mobile phones, tablets and computers
                              </p>
                          </div>
 
@@ -50,7 +50,7 @@ function Footer() {
                              <p>
                                  Block B
                              </p>
-                             <p>Phone:(256759968853) </p>
+                             <p>Phone:(+256 775 418640 / +256 757 158437) </p>
                              <p>Email:(chills@gmial.com)</p>
                              
                          </div>

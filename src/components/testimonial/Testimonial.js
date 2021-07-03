@@ -38,7 +38,7 @@ function Testimonial() {
                 {/*student words */}
                 <div className="testimonail__words">
                     <p>
-                        I have been able to my exams by studying with ExcelOnline.They have the best teachers and materials around town
+                        I have been able to pass my exams by studying with ExcelOnline.They have the best teachers and materials around town
                         
                     </p>
                     

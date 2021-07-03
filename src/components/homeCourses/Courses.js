@@ -325,7 +325,7 @@ function Courses() {
                 <h1 className="course__categories">Course  <span style={{ color: "#E8580C" }}> Categories</span></h1>
                 <div className="homecourse__words">
                     <p>
-                        Our courses have been developed to cover categories that helps you combine the course  units which meets your specific career needs
+                        Our courses have been developed to cover categories that help you combine the course  units which meets your specific career needs
                     </p>
                 </div>
                 {/*course categories */}
@@ -426,7 +426,7 @@ function Courses() {
                 <h1 className="course__categories">Search <span style={{ color: "#E8580C" }}> Courses</span></h1>
                 <div className="homecourse__words">
                     <p>
-                        You can search the specific course interest by its name
+                        You can search the specific course of interest by its name
                     </p>
                 </div>
                 {/*search area */}
@@ -441,7 +441,7 @@ function Courses() {
                 {/*search courses */}
 
                 {/*site announcements */}
-                <h1>Search <span style={{ color: "#E8580C" }}> Announcements</span></h1>
+                <h1>Site <span style={{ color: "#E8580C" }}> Announcements</span></h1>
                 <div className="homecourse__words">
                     <p>
                         The need for online studies is urgent to provide learning to the large population of the youths especially in developing countries.

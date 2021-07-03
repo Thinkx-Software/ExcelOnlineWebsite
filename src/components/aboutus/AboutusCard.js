@@ -27,11 +27,11 @@ function AboutusCard() {
                             {/*content */}
                             <div className="about__content">
                                 <p>
-                                    Excel Online is an E-Learning established platfor in Uganda to provide high quality lessons for
-                                    seccondary school students seeking admission into the university. Our courses are designed for the maojority of
-                                    the approved UCE AND UACE examinations in Uganda and provides the followed allowed Ugandan curriculum
-                                    The authors who teach are highly qualified and experienced approved by the National Council of Sports.
-                                    Several Students have enrolled for our online learning with our lessons they have been able to pass highly with
+                                    Excel Online is an E-Learning established platform in Uganda to provide high quality lessons for
+                                    seccondary school students seeking admission into the university. Our courses are designed for the majority of
+                                    the approved UCE AND UACE examinations in Uganda and provides the followed allowed Ugandan curriculum.
+                                    The authors who teach are highly qualified and experienced approved by the National Council of Education and Sports.
+                                    Several Students have enrolled for our online learning with our lessons, they have been able to pass highly with
                                     high grades and some have testimonials.View the testimonials on the home page.So Many of them have proceeded to
                                     Certified universties in Uganda such as Makerere University , Mbarara University, Kyambogo and others
                                     .Join our success community become the story and we tell the story for you.<Link>Enroll Now</Link>
