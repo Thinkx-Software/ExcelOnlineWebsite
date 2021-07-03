@@ -3,7 +3,6 @@ import React from 'react'
 import "./Courses.css";
 import SearchIcon from '@material-ui/icons/Search';
 import { Link } from "react-router-dom"
-import School from '../school/School';
 function Courses() {
     return (
         <div className="homeCourse__area">
