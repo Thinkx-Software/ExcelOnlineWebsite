@@ -1,4 +1,6 @@
-
+.removeBanner{
+    display: none;
+}
 .banner{
     /* position: relative; */
     width: 100%;
@@ -6,6 +8,10 @@
     z-index: -1;
     height: 80vh;
     cursor: pointer;
+    margin-top: -100px;
+}
+.removeMarginTop{
+    margin-top: 0;
 }
 .bannerHome__Image{
     object-fit: cover;
@@ -14,15 +20,15 @@
     background-color: #111;
 }
 .banner__words{
-    position: absolute;
+    position:absolute;
     z-index: 20;
     color:#fff;
     background-color:rgba(94,92,97,0.3);
     height: 20vh;
     width: 40%;
     align-items: center;
-    margin-top: 50px;
     margin-left: 60px;
+    bottom: 200px;
     
 }
 .banner__wordsH3{
@@ -36,7 +42,7 @@
     height: 20vh;
     width: 40%;
     align-items: center;
-    margin-top: 210px;
     margin-left: 60px;
+    bottom: 30px;
 
 }

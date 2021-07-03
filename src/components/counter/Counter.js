@@ -20,7 +20,7 @@ function Counter() {
                     {/*counting */}
                     <div className="counter__counting">
                     <Grid container spacing={3}>
-                        <Grid item  sm={3}>
+                        <Grid item  sm={12} md={3}>
                             <div className="counting__details">
                                 <div className="counting__detailsi">
                                     <CountUp
@@ -33,7 +33,7 @@ function Counter() {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item  sm={3}>
+                        <Grid item  sm={12}md={3}>
                         <div className="counting__details">
                                 <div className="counting__detailsi">
                                 <CountUp
@@ -46,7 +46,7 @@ function Counter() {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item  sm={3}>
+                        <Grid item  sm={12} md={3}>
                         <div className="counting__details">
                                 <div className="counting__detailsi">
                                 <CountUp
@@ -60,7 +60,7 @@ function Counter() {
                             </div>
 
                         </Grid>
-                        <Grid item  sm={3}>
+                        <Grid item  sm={12} md={3}>
                         <div className="counting__details">
                                 <div className="counting__detailsi">
                                 <CountUp

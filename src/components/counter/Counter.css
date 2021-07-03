@@ -7,8 +7,29 @@
     height: 50vh;
     width: 100%;
     opacity: 1;
-    
 }
+/*media query*/
+@media only screen and (max-width: 768px) {
+    .counter{
+      background-color: black;
+      height: fit-content;
+      background-image: url('https://images.pexels.com/photos/4144096/pexels-photo-4144096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      background-color:#000;
+      width: 100%;
+      opacity: 1;
+    }
+    
+  .counter__details{
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+  }
+  
+/*media query*/
 
   .counter__details{
       display: grid;

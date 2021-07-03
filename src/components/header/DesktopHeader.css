@@ -1,8 +1,27 @@
 .desktopheader{
-    background-color:rgba(94,92,97,0.2);
     height: 13vh;
     color:#fff;
+    background:rgba(143, 112, 112, 0.3);
+    transition:all 1.5s ease;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index: 20;
 }
+/**/
+.desktop__black{
+    background-color:#E8580C !important;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    height: 13vh;
+    color:#fff;
+    width: 100%;
+
+
+}
+/**/
 .desktopheader__details{
     display: flex;
     align-items: center;

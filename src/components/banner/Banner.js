@@ -1,12 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./Banner.css";
 import { Button } from "@material-ui/core";
+import useCheckIsMobile from "../../Hooks/MobileHook/UseCheckIsMobile";
 
 const Banner = () => {
+    const [showBanner , setShowBanner] = useState(false)
+    //window listener
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                setShowBanner(true)
+            }
+            else {
+                setShowBanner(false)
+            }
+        })
+        return ()=> window.removeEventListener('scroll', ()=>{})
+        
+    }, [showBanner])
+    //window listener
+    //add and remove margin
+    const [marginTop, setMarginTop] = useState(true)
+
+    //check mobile view
+           //check mobile
+const isMobile = useCheckIsMobile()
+    
     return (
-        <div className="banner">
+        <div className={`banner ${showBanner&&"removeBanner"} ${isMobile&&"removeMarginTop"} `}>
             <div className="banner__carousel">
                 <Carousel
 

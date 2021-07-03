@@ -1,11 +1,26 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import "./DesktopHeader.css";
 import MenuIcon from '@material-ui/icons/Menu';
 import {Link} from "react-router-dom";
 import "./DesktopHeader.css"
 function DesktopHeader() {
+    const [showBackGroundColor , setShowBackGroundColor] = useState(false)
+    //window listener
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 70) {
+                setShowBackGroundColor(true)
+            }
+            else {
+                setShowBackGroundColor(false)
+            }
+        })
+        return ()=> window.removeEventListener('scroll', ()=>{})
+        
+    }, [showBackGroundColor])
+    //window listener
     return (
-        <div className="desktopheader">
+        <div className={`desktopheader  ${showBackGroundColor&&'desktop__black'}`}>
             <div className="desktopheader__details">
                 <div className="desktopheader__detailsLeft">
                     <div className="detailsLeft__icon">
@@ -26,7 +41,7 @@ function DesktopHeader() {
                     </div>
                 </div>
                 <div className="desktopheader__detailsMiddle">
-                    <Link>HOME</Link>
+                    <Link to="/">HOME</Link>
                     <Link to="/excel/aboutus">ABOUT US</Link>
                     <Link to="/excel/howtopay">HOW TO PAY </Link>
                     <Link to="">SCHOOL BLOG</Link>

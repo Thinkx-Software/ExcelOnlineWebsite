@@ -5,6 +5,36 @@
     justify-content: center;
     align-items: center;
 }
+/*media queries*/
+@media only screen and (max-width: 768px) {
+    .homecard{
+        width: 100%;
+        height: fit-content;
+        background-color:#E8580C;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .card__detailsfirst, .card__detailsSecond, .card__detailsThird, .card__detailsFour{
+        margin-top: 10px;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    .homecard__detailsh4{
+        margin-left: -100px;
+    }
+    .homecard__detailsh4>h6{
+        margin-left: -150px;
+        color: #fff;
+    }
+    .home__paragraph{
+        margin-left: -50px;
+    }
+  }
+/*media queries*/
 .homecard__details{
     margin-left: 20px !important;
     margin-right: 20px !important;

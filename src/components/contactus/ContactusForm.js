@@ -46,6 +46,15 @@ function ContactusForm() {
     return (
         <div className="contactusform">
             <div className="contactusform__details">
+            <div className="aboutusform__about">
+                            <div className="aboutus__header" style={{
+                                textAlign:"center"
+                            }}>
+                                <h2 style={{
+                                    color:" #E8580C"
+                                }}>Contact Us</h2>
+                            </div>
+                            </div>
                 {/*sign updetails */}
                 <div className="signup__detail">
 
@@ -198,12 +207,15 @@ function ContactusForm() {
                                                 name="message"
                                                 type="text"
                                                 as={TextareaAutosize}
-                                                variant={!errors.message && touched.message ? "filled" : "outlined"}
                                                 error={errors.message && touched.message}
                                                 label="Where did u here us about"
                                                 placeholder="enter message"
                                                 rowsMax={4}
                                                 size="small"
+                                                aria-label="maximum height"
+                                                style={{
+                                                    height:"70px"
+                                                }}
                                             />
                                             {errors.message && touched.message &&
                                                 <ErrorMessage name="message" component="span" className="error" />}

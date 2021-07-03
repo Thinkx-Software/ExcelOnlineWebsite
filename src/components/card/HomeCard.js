@@ -5,12 +5,14 @@ import TouchAppIcon from '@material-ui/icons/TouchApp';
 import ComputerIcon from '@material-ui/icons/Computer';
 import PaymentIcon from '@material-ui/icons/Payment';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import {Link} from "react-router-dom"
 function HomeCard() {
     return (
         <div className="homecard">
             <div className="homecard__details">
                 <Grid spacing={3} container>
-                    <Grid item sm={3}>
+                    <Grid item sm={12} md={3}>
+                        
                         <div className="card__detailsfirst">
                             <div className="card__detailsfirstInfo">
                                 <TouchAppIcon  fontSize="large" className="homeIcon"/>
@@ -18,8 +20,8 @@ function HomeCard() {
                             <div className="homecard__detailsh4">
                             <h6>LEARN ONLINE</h6>
                             </div>
-                            <div>
-                                <p>
+                            <div className="home__para">
+                                <p className="home__paragraph">
                                     Online Courses enable students learn anywhere and at any time
                                 </p>
                             </div>
@@ -29,7 +31,7 @@ function HomeCard() {
 
                     </Grid>
 
-                    <Grid item sm={3}>
+                    <Grid item sm={12} md={3}>
                         <div className="card__detailsSecond">
                             <div className="card__detailsSecondInfo">
                                 <ComputerIcon  className="homeIcon"/>
@@ -38,7 +40,7 @@ function HomeCard() {
                             <h6>ENROLL NOW</h6>
                             </div>
                             <div>
-                                <p>
+                                <p className="home__paragraph">
                                     Online Courses enable students learn anywhere and at any time
                                 </p>
                             </div>
@@ -47,7 +49,8 @@ function HomeCard() {
                         </div>
 
                     </Grid>
-                    <Grid item sm={3}>
+                    <Grid item sm={12} md={3}>
+                        <Link to="/excel/howtopay">
                         <div className="card__detailsThird">
                             <div className="card__detailsThirdInfo">
                                 <PaymentIcon  className="homeIcon"/>
@@ -56,15 +59,17 @@ function HomeCard() {
                             <h6>HOW TO PAY</h6>
                             </div>
                             <div>
-                                <p>
+                                <p className="home__paragraph">
                                     Online Courses enable students learn anywhere and at any time
                                 </p>
                             </div>
                             
 
                         </div>
+                        </Link>
+                        
                     </Grid>
-                    <Grid item sm={3}>
+                    <Grid item sm={12} md={3}>
                         <div className="card__detailsFour">
                             <div className="card__detailsFourInfo">
                                 <AttachMoneyIcon  className="homeIcon"/>
@@ -73,7 +78,7 @@ function HomeCard() {
                             <h6>EARN MONEY</h6>
                             </div>
                             <div>
-                                <p>
+                                <p className="home__paragraph">
                                     Online Courses enable students learn anywhere and at any time
                                 </p>
                             </div>
