@@ -3,8 +3,12 @@ import "./DesktopHeader.css";
 import MenuIcon from '@material-ui/icons/Menu';
 import {Link} from "react-router-dom";
 import "./DesktopHeader.css"
+
+
 function DesktopHeader({color}) {
     const [showBackGroundColor , setShowBackGroundColor] = useState(false)
+
+
     //window listener
     //color
     const [colorLink, setLinkColor] = useState("grey")
@@ -24,7 +28,7 @@ function DesktopHeader({color}) {
         
     }, [showBackGroundColor])
     //window listener
-    
+
     //bg
     return (
         <div className={`desktopheader  ${showBackGroundColor&&'desktop__black'}`} style={{
