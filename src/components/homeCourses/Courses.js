@@ -325,7 +325,7 @@ function Courses() {
                 <h1 className="course__categories">Course  <span style={{ color: "#E8580C" }}> Categories</span></h1>
                 <div className="homecourse__words">
                     <p>
-                        Our courses have been developed to cover categories that help you combine the course  units which meets your specific career needs
+                        Our courses have been developed to cover categories that helpmn you combine the course  units which meets your specific career needs
                     </p>
                 </div>
                 {/*course categories */}
@@ -462,3 +462,4 @@ function Courses() {
 }
 
 export default Courses
+//http://excelonlineschool.ac.ug/app/webservice/rest/server.php?wstoken=23ae202137b89be87c8a04031f23eef4&wsfunction=core_course_get_courses&moodlewsrestformat=json
