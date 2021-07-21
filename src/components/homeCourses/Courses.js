@@ -3,7 +3,15 @@ import React from 'react'
 import "./Courses.css";
 import SearchIcon from '@material-ui/icons/Search';
 import { Link } from "react-router-dom"
+import useFetchCourses from '../../Hooks/useFetchCourses';
+import useCheckIsMobile from '../../Hooks/MobileHook/UseCheckIsMobile';
+import Spinner from '../spinner/Spinner';
 function Courses() {
+          //get courses
+          const allCourses = useFetchCourses()
+               //check mobile
+    const isMobile = useCheckIsMobile()
+          //get all courses
     return (
         <div className="homeCourse__area">
             <div className="homeCourse__course">
@@ -15,311 +23,41 @@ function Courses() {
                 </div>
 
                 {/*courses card */}
-                <div className="homecourse__card">
-                    <Grid container spacing={2}>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__first">
-                                <Link>
-                                    <h6>All</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__second">
-                                <Link>
-                                    <h6>Mathematics</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__third">
-                                <Link>
-                                    <h6>Biology</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__four">
-                                <Link>
-                                    <h6>Chemistry</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__fifth">
-                                <Link>
-                                    <h6>Physics</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={2}>
-                            <div className="homecourse__sixth">
-                                <Link>
-                                    <h6>English</h6>
-                                </Link>
-                            </div>
-                        </Grid>
-
-                    </Grid>
 
 
+                {/*small cards*/}
+                <div className="homecourse__categoryfetch"
+                 style={{
+                     margin: "20px"
+                 }}
+                >
+
+                    {
+                       allCourses.length>0?
+                       allCourses.map((item, index)=>(
+                        <div className="homecourse__sixth" style={{width:isMobile?"80%":"25%", margin:"20px", height:"fit-content"}} key={index}>
+                        <Link>
+                            <h6>{item.courseName}</h6>
+                        </Link>
+                    </div>
+
+                       ))
+                       :<Spinner/>  
+                    }
                 </div>
-
-                {/*courses card */}
-
-
-                {/*arrows  left out*/}
-                {/*arrows left out*/}
+                {/*small cards*/}
 
                 {/*select left out now*/}
                 {/*select left out now*/}
 
                 {/*images course*/}
                 <div className="homecoursecard__images">
-                    <Grid container spacing={3}>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4145146/pexels-photo-4145146.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        zoology notes complete
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-
-                                {/*images word */}
-
-                            </div>
-
-                        </Grid>
-                        <Grid item sm={12}md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4144182/pexels-photo-4144182.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Refraction notes for all
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4144095/pexels-photo-4144095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                    light notes advanced
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4144449/pexels-photo-4144449.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Modern Physics advanced
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-
-                    </Grid>
-
+                   
                 </div>
 
                 {/*images course */}
 
-                {/*images course2 */}
-                <div className="homecoursecard__images">
-                    <Grid container spacing={3}>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4145070/pexels-photo-4145070.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px",
-                                    cursor: "pointer"
-                                }}
-                                onMouseEnter={() => { }}
-                                onMouseLeave={() => { }}
-                            >
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Set Theory notes for all
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://media.istockphoto.com/photos/facing-my-future-with-confidence-picture-id1139495117?k=6&m=1139495117&s=612x612&w=0&h=a2hxTvHq7XNN0zMh8m1CuyDPIaNYiswD7iZbh5rpac4=)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Matrices notes for all classes 
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-
-
-                                {/*images word */}
-
-                                {/*images word */}
-
-                            </div>
-
-                        </Grid>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4145070/pexels-photo-4145070.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Waves notes completed 
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-
-
-                                {/*images word */}
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={3}>
-                            <div className="images__course1"
-                                style={{
-                                    backgroundSize: "cover",
-                                    backgroundImage: `url(https://images.pexels.com/photos/4145070/pexels-photo-4145070.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
-                                    height: "50vh",
-                                    width: "100%",
-                                    borderRadius: "10px"
-                                }}
-                            >
-                                {/*images words */}
-                                {/*images words */}
-                                <div className="images__wordSection">
-                                    <h4 style={{ color: "#fff" }}>
-                                        Plants and Animals free
-                                    </h4>
-                                    <div className="images__button">
-                                        <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
-                                    </div>
-
-                                </div>
-
-
-
-                                {/*images word */}
-
-                                {/*images word */}
-
-                            </div>
-                        </Grid>
-
-                    </Grid>
-
-                </div>
-                {/*images course2 */}
-
+               
                 {/*course categories */}
 
                 <h1 className="course__categories">Course  <span style={{ color: "#E8580C" }}> Categories</span></h1>
@@ -329,97 +67,54 @@ function Courses() {
                     </p>
                 </div>
                 {/*course categories */}
+                 <div className="homecourse__categoryfetch" >
+                     {
+                         allCourses.length>0?allCourses.map((item, index)=>(
+                            <div className="images__course1" 
+                            style={{
+                                backgroundSize: "cover",
+                                backgroundImage: `url(https://images.pexels.com/photos/4145146/pexels-photo-4145146.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)`,
+                                height: "50vh",
+                                width:isMobile?"90%":"20%",
+                                borderRadius: "10px",
+                                margin:5
+                            }}
+                        >
+                            {/*images words */}
+                            {/*images words */}
+                            <div className="images__wordSection">
+                                <h4 style={{ color: "#fff" }}>
+                                    {item.courseName}
+                                </h4>
+                                <div className="images__button">
+                                    <Button style={{ color: "#fff", backgroundColor: "#E8580C" }} variant="contained">View More</Button>
+                                </div>
+                    
+                            </div>
+                    
+                    
+                            {/*images word */}
+                    
+                        </div>
+
+                         ))
+                         
+                         
+                         :<Spinner/>
+                     }
+
+                 </div>
+
+                 {
+
+                 }
 
                 {/*course categories area */}
-                <div className="homecourse__categories">
-                    <Grid container spacing={3}>
-                        <Grid item sm={12} md={4}>
-                            <div className="categories__first">
-                                <div className="categoriesfirstImage">
-                                    <img
-                                        loading="lazy"
-                                        alt="not found"
-                                        src="https://images.pexels.com/photos/3825434/pexels-photo-3825434.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                    />
-                                </div>
 
-                                <div className="categories__details">
-                                    <h5>Biology</h5>
-                                </div>
-                                <div className="categories__detailsP">
-                                    <p>
-                                        The Biology curriculum that covers entire A level content
-                                    </p>
-                                </div>
-                                <div className="categories__button">
-                                    <Button 
-                                    style={{
-                                        backgroundColor:"#E8580C",
-                                        color:"#fff"
-                                    }}
-                                     variant="contained" fullWidth> Read More</Button>
-                                </div>
+                {/*circel images */}
+                {/*circle images */}
 
-                            </div>
-
-                        </Grid>
-                        <Grid item sm={12} md={4}>
-                            <div className="categories__first">
-                                <div className="categoriesfirstImage">
-                                    <img
-                                        loading="lazy"
-                                        alt="not found"
-                                        src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                    />
-                                </div>
-                                <div className="categories__details">
-                                    <h5>Physics</h5>
-                                </div>
-                                <div className="categories__detailsP">
-                                    <p>
-                                        The Physics curriculum that covers entire A level content
-                                    </p>
-                                </div>
-
-                                <div className="categories__button">
-                                    <Button style={{
-                                        backgroundColor:"#E8580C",
-                                        color:"#fff"
-                                    }} variant="contained" fullWidth>Read More</Button>
-                                </div>
-
-                            </div>
-                        </Grid>
-                        <Grid item sm={12} md={4}>
-                            <div className="categories__first">
-                                <div className="categoriesfirstImage">
-                                    <img
-                                        loading="lazy"
-                                        alt="not found"
-                                        src="https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                    />
-                                </div>
-                                <div className="categories__details">
-                                    <h5>Mathematics</h5>
-                                </div>
-                                <div className="categories__detailsP">
-                                    <p>
-                                        The Biology curriculum that covers entire A level content
-                                    </p>
-                                </div>
-                                <div className="categories__button">
-                                    <Button style={{
-                                        backgroundColor:"#E8580C",
-                                        color:"#fff"
-                                    }} variant="contained" fullWidth>Read More</Button>
-                                </div>
-
-                            </div>
-                        </Grid>
-
-                    </Grid>
-
-                </div>
+                
                 {/*course categories a */}
 
                 {/* search courses*/}
