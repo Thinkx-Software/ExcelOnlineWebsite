@@ -31,7 +31,7 @@ function HowToPayCard() {
                             You can pay for our courses using paypal from your paypal account or master card account
                             .We also accept bank payments , visa card payment and lastly we also accept mobile money payments.
                             For any form of payment the money is converted into the our local currency .
-                            Please if you have any difficult contct us:(256759983853) or Email us :(katznicho@gmail.com) <Link>Make Payment</Link>
+                            Please if you have any difficult contact us:(+256 775 418640) or Email us :(katznicho@gmail.com) <Link>Make Payment</Link>
 
                                 </p>
                             </div>
@@ -53,7 +53,7 @@ function HowToPayCard() {
                                 </div>
                                 <div className="forum__forum1">
                                     <DescriptionIcon  color="blue"/>
-                                    <Link>
+                                    <Link to={{pathname: "http://excelonlineschool.ac.ug/excel/login/index.php" }} target="_blank">
                                         Resources
                                     </Link>
 

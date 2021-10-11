@@ -37,7 +37,7 @@
 
 }
 .detailsLeftImage>img{
-    height:120px;
+    height:90px;
     width: 120px;
     object-fit: contain;
     margin-top: -20px;

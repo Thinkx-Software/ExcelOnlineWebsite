@@ -11,18 +11,18 @@ const Navigation = ()=>{
     return (
         <Router>
             <Switch>
-           <PublicRoutes path="/excel/:page" exact>
+           <PublicRoutes path="/:page" exact>
                <PagesRenderer/>
            </PublicRoutes>
            {/*redirect to home */}
-           <Route path="/excel" exact>
+           <Route path="/" exact>
                 <Home/>
             </Route>
             <Route
              path="/"
              exact
              render={
-                 ()=><Redirect to={{pathname:"/excel"}}/>
+                 ()=><Redirect to={{pathname:"/"}}/>
              }
             />
             {/*redirect to home */}

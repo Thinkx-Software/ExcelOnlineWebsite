@@ -56,7 +56,7 @@ const HeaderMobile = ({ toggleMenu, setToggleMenu, home, events, blog, contact, 
                         <li>
                             <div className="mobile__icons">
 
-                                <Link to="/excel/aboutus">
+                                <Link to="/aboutus">
                                 <span className={campaign&&`header__isactive`}>ABOUT US</span>
                                     </Link>
 
@@ -67,7 +67,7 @@ const HeaderMobile = ({ toggleMenu, setToggleMenu, home, events, blog, contact, 
                         
                         <li>
                             <div className="mobile__icons">
-                                <Link to="/excel/howtopay">
+                                <Link to="/howtopay">
                                 <span className={events&&`header__isactive`}>HOW TO PAY</span>
                                     
                                     </Link>
@@ -78,7 +78,7 @@ const HeaderMobile = ({ toggleMenu, setToggleMenu, home, events, blog, contact, 
                         <li>
                             <div className="mobile__icons">
 
-                                <Link to="/excel/contactus">
+                                <Link to="/contactus">
                                 <span className={blog&&`header__isactive`}>CONTACT US</span>
                                 </Link>
 
@@ -90,7 +90,7 @@ const HeaderMobile = ({ toggleMenu, setToggleMenu, home, events, blog, contact, 
                         
                         <li>
                             <div className="mobile__icons">
-                                <Link to="/aboutus">
+                                <Link to={{pathname: "http://excelonlineschool.ac.ug/excel/login/index.php" }} target="_blank">
                                     <span className={aboutus&&`header__isactive`}>LOGIN</span></Link>
                                                                
 

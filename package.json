@@ -1,5 +1,6 @@
 {
   "name": "excel-on-line",
+  "homepage": "http://excelonlineschool.ac.ug",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

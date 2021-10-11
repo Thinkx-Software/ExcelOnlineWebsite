@@ -36,7 +36,7 @@ function Courses() {
                        allCourses.length>0?
                        allCourses.map((item, index)=>(
                         <div className="homecourse__sixth" style={{width:isMobile?"80%":"25%", margin:"20px", height:"fit-content"}} key={index}>
-                        <Link>
+                        <Link to={{pathname: "http://excelonlineschool.ac.ug/excel/login/index.php" }} target="_blank">
                             <h6>{item.courseName}</h6>
                         </Link>
                     </div>
@@ -157,4 +157,3 @@ function Courses() {
 }
 
 export default Courses
-//http://excelonlineschool.ac.ug/app/webservice/rest/server.php?wstoken=23ae202137b89be87c8a04031f23eef4&wsfunction=core_course_get_courses&moodlewsrestformat=json
